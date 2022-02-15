@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Fjalla+One&family=Gidugu&family=Poppins:wght@100&family=Roboto:wght@100&family=Signika:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Fjalla+One&family=Gidugu&family=Poppins:wght@100&family=Roboto:wght@100&family=Shizuru&family=Signika:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: hidden;
+}
+:root{
+    scroll-behavior: smooth;
+}
+/* .landingpage */
+.container .landingpage nav{
+    position: fixed;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+.container .landingpage nav ul{
+    display: flex;
+}
+.container .landingpage nav ul li{
+    margin: 10px;
+    list-style: none;
+}
+.container .landingpage nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    height: 100vh;
+}
+.container .landingpage{
+    background: rgb(27, 27, 27);
+}
+.container .landingpage h1{
+    text-align: center;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 5pc;
+    letter-spacing: 2px;
+}
+.container .landingpage  span{
+    font-family: 'Lemon', cursive;
+}
+.container .landingpage .spanhaus{
+    font-family: 'Staatliches', cursive;
+}
+.container .pangan h1{
+    font-family: 'Lemon', cursive;
+    padding-top: 4pc;
+    letter-spacing: 2px;
+}
+.container .landingpage p{
+    font-family: 'Staatliches', cursive;
+    margin-top: 10pc;
+    margin-left: 5pc;
+}
+.container .landingpage strong{
+    font-family: 'Patrick Hand', cursive;
+    margin-top: -5pc;
+    margin-left: 5pc;
+}
+.container .landingpage .banner{
+    margin-top: -17pc;
+    margin-left: 60pc;
+    width: 20pc;
+    height: 18.4pc;
+    box-shadow: 12px 12px 0 0  rgb(39, 39, 39);
+}
+/* pangan  */
+.container .pangan{
+    background: rgb(39, 39, 39);
+}
+.container .pangan .choose{
+    display: flex;
+    justify-content: center;
+    padding: 10pc;
+}
+.container .pangan .pilihan{
+    border: 5px solid rgb(26, 26, 26);
+    background: rgb(26, 26, 26);
+    border-radius:20px;
+    width: 15pc;
+    height: 20pc;
+    margin: 40px;
+    margin-top: -2vh;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Shizuru', cursive;
+    box-shadow: 10px 10px rgb(56, 56, 56);
+    transition: 0.5s;
+}
+.container .pangan .pilihan:hover{
+    box-shadow: 15px 15px rgb(56, 56, 56);
+    transform: scale(1.1);
+}
+.container .pangan .pilihan img{
+    transition: 0.5s;
+}
+.container .pangan .pilihan img:hover{
+    transform: scale(0.9);
+}
+
+/* delivery */
+.container .delivery{
+    background: rgb(44, 44, 44);
+}
+.container .delivery h2{
+    padding: 5pc;
+    font-family: 'Caveat', cursive;
+}
+form{
+    text-align: center;
+    margin-top: 10pc;
+}
+/* input{
+    width: 50pc;
+    height: 2pc;
+    padding: 5px;
+    outline: none;
+} */
+.container .delivery p{
+    margin-top: 24%;
+    text-align: center;
+    color: white;
+    font-family: arial;
+}
+
+/* responsif */
+
+@media only screen and (max-width:390px) {
+    .container .landingpage nav{
+        position: fixed;
+    }
+    .container .landingpage h1{
+        font-size: 1.2rem;
+        margin-left: -3pc;
+    }
+    .container .landingpage p{
+        font-family: 'Staatliches', cursive;
+        margin-top: 10pc;
+        margin-left: -2pc;
+        font-size: 0.8rem;
+    }
+    .container .landingpage strong{
+        font-family: 'Patrick Hand', cursive;
+        margin-top: -5pc;
+        margin-left: 5pc;
+    }
+    .spanhaus{
+        font-size: 13px;
+    }
+    .container .landingpage p{
+        padding: -20px;
+        margin-top: -1pc;
+        text-align: center;
+        margin-left: -3pc;
+    }
+    .container .landingpage strong{
+        font-size: 20px;
+        text-align: center;
+        margin-left: -10px;
+    }
+    .container .landingpage .span2{
+        font-size: 18px;
+    }
+    .container .landingpage .banner{
+        width: 10pc;
+        height: 9.4pc;
+        margin-top: 5pc;
+        margin-left: 80px;
+    }
+    .container .pangan h1{
+        margin-top: -1pc;
+    }
+    .container .pangan .text-3xl{
+        font-size: 13px;
+        margin-left: -3.5pc;
+    }
+    .container .pangan .choose{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -10pc;
+        margin-top: -10pc;
+    }
+    .container .pangan .pilihan{
+        width: 15pc;
+        height: 10pc;
+    }
+    .container .pangan .w-44{
+        width: 6pc;
+    }
+    .container .pangan .mt-10{
+        margin-top: 5px;
+    }
+    .container .delivery h2{
+        margin-left: -4pc;
+    }
+    .container .delivery p{
+        margin-top: 21pc;
+        margin-left: -4pc;
+    }
+}
+
+
